@@ -19,3 +19,7 @@ def test_prime_factor_of_4():
 def test_prime_factor_of_6():
     primefactors = PrimeFactor()
     assert primefactors.    of(6) == [2, 3]
+
+def test_prime_factor_of_9():
+    primefactors = PrimeFactor()
+    assert primefactors.    of(9) == [3, 3]
