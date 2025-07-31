@@ -7,8 +7,12 @@ class PrimeFactor:
                     factor.append(2)
                     number //= 2
             elif number == 6:
-                factor.append(2)
-                factor.append(3)
+                while number % 2 == 0:
+                    factor.append(2)
+                    number //= 2
+                while number % 3 == 0:
+                    factor.append(3)
+                    number //= 3
             else:
                 factor.append(number)
         return factor
