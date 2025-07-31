@@ -3,8 +3,12 @@ class PrimeFactor:
         factor = []
         if number > 1:
             if number == 4:
-                factor.append(2)
-                factor.append(2)
+                if number % 2 == 0:
+                    factor.append(2)
+                    number //= 2
+                if number % 2 == 0:
+                    factor.append(2)
+                    number //= 2
             else:
                 factor.append(number)
         return factor
