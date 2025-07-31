@@ -7,15 +7,12 @@ class PrimeFactor:
                 while number % divisor == 0:
                     factor.append(divisor)
                     number //= divisor
-            elif number == 6:
+            elif number == 6 or number == 9:
                 while number > 1:
                     while number % divisor == 0:
                         factor.append(divisor)
                         number //= divisor
                     divisor += 1
-            elif number == 9:
-                factor.append(3)
-                factor.append(3)
             else:
                 factor.append(number)
         return factor
